@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 76204609}
   - component: {fileID: 76204608}
   - component: {fileID: 76204612}
+  - component: {fileID: 76204613}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -158,6 +159,7 @@ MonoBehaviour:
   _Horizontal: Horizontal
   _Vertical: Vertical
   _Speed: 2
+  _animator: {fileID: 0}
 --- !u!50 &76204609
 Rigidbody2D:
   serializedVersion: 4
@@ -226,7 +228,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 369882307, guid: ccdb77d0778320d42bf5919a8aa3d54b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -246,14 +248,14 @@ Transform:
   m_GameObject: {fileID: 76204607}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4335978, y: -2.3029008, z: 0}
+  m_LocalPosition: {x: -1.4335978, y: -2.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &76204612
-CapsuleCollider2D:
+--- !u!68 &76204612
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -285,8 +287,48 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.41956586, y: -1.1950738}
+  - {x: -0.5973661, y: -1.1931646}
+  - {x: -0.5830637, y: 0.71716225}
+  - {x: -0.38406205, y: 0.7314503}
+  - {x: -0.31852984, y: 0.70336485}
+  - {x: -0.29027545, y: 0.72727597}
+  - {x: 0.11998999, y: 0.7140008}
+  - {x: 0.26568305, y: 0.4197092}
+  - {x: 0.5000238, y: 0.40732026}
+  - {x: 0.59793633, y: 0.21238387}
+  - {x: 0.6241487, y: 0.00715065}
+  - {x: 0.6225575, y: -0.5174296}
+  - {x: 0.5079066, y: -0.51594234}
+  - {x: 0.5508669, y: -0.99970245}
+  - {x: 0.42041874, y: -1.0953257}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!95 &76204613
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76204607}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bb270d7c66efc746af6821cc97aadf1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &614183507
 GameObject:
   m_ObjectHideFlags: 0
